@@ -1,14 +1,37 @@
-//****************[SERVER EXPRESS]****************
-/*
+/*******************[ATENÇÃO]***********************
+
+PARA INICIAR O SERVIDOR E RODAR O PROGRAMA:
+    1 - ABRA O BASH
+    2 - $npm start
+
+    O RESULTADO DEVER SER ESSE:
+    
+        > nlw@ start C:\Users\SORAIA\Desktop\Developer\nlw
+        > nodemon src/server.js
+
+        [nodemon] 2.0.4
+        [nodemon] to restart at any time, enter `rs`
+        [nodemon] watching path(s): *.*
+        [nodemon] watching extensions: js,mjs,json
+        [nodemon] starting `node src/server.js`
+    
+    AGORA O SERVER ESTA PRONTO PARA RODAR O PROGRAMA
+****************************************************
+
+
+
+*********************[BACK END]*********************
+******************[SERVER EXPRESS]******************
+
 NO BASH
     node -v => Mostra a versão do Node que esta instalada
     node + enter => Entra no terminal do Node
     npm -v => Mostra a versão do npm
-************************************************
+****************************************************
 
 
 
-***************[CRIANDO MÓDULOS]****************
+***************[CRIANDO MÓDULOS]********************
 ***NODE PACKAGE MANANGER*** - Gerenciador de Dependências do Node
 
 NO BASH 
@@ -20,11 +43,11 @@ NO BASH
 
     npm install nodemon -D 
     ---> "Re-start server a qualquer momento ao digitar 'rs + enter' "
-************************************************
+****************************************************
 
 
 
-**********[ATALHO PARA O SERVER EXPRESS]********
+************[ATALHO PARA O SERVER EXPRESS]**********
 
 NO PACKAGE.JSON => (/src/package.json)
 
@@ -35,22 +58,22 @@ NO PACKAGE.JSON => (/src/package.json)
         "start": "nodemon src/server.js" ------->ADICIONE ESSA LINHA
 
     ***A partir de agora ===> npm start => Liga o servidor
-************************************************
+****************************************************
 
 
 
-**************[TEMPLATE ENGINE]*****************
+****************[TEMPLATE ENGINE]*******************
 ***NUNJUCKS***
 
 NO BASH 
     npm install nunjucks
     ---> "Oferece dinamismo ao html"
 
-************************************************
+****************************************************
 
 
 
-***********[CRIANDO O SERVIDOR EXPRESS]*********
+*************[CRIANDO O SERVIDOR EXPRESS]***********
 
 NO SERVER.JS => (/src/server.js)
 
@@ -74,7 +97,7 @@ NO SERVER.JS => (/src/server.js)
         return res.render("search-results.html")          ----->Renderizando pelo nunjucks
     })
     server.listen(3000)-------->O end. do server será: localhost:3000
-************************************************
+****************************************************
 
 
 
@@ -83,5 +106,30 @@ OBS:
     Ctrl+Shift+p => >Preferences: Open Settings(JSON)
 
     Dois clicks + Ctrl D => Permite digitação também no próx elemento
+
+*/
+
+
+/*******************[ATENÇÃO]***********************
+
+
+
+
+****************************************************
+
+
+
+*****************[BANCO DE DADOS]*******************
+********************[SQLite3]***********************
+
+NO BASH
+    npm install sqlite3
+    ---> "Instala o SQLite na aplicação"
+
+
+****************************************************
+
+
+
 
 */
