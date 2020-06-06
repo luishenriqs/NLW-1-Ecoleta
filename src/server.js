@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require("express") //----->Importando dependência do npm
 const server = express()
 
 //***Configurar pasta pública

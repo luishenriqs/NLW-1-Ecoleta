@@ -77,7 +77,7 @@ NO BASH
 
 NO SERVER.JS => (/src/server.js)
 
-    const express = require("express")
+    const express = require("express")    ----->Importando dependência do npm
     const server = express()
     server.use(express.static("public"))  ----->Pega arq. js, css e assets da pasta "public"
 
