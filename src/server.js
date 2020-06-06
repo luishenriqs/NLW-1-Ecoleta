@@ -1,5 +1,6 @@
 const express = require("express") //----->Importando dependência do npm
 const server = express()
+const db = require("./database/db.js") //----->Importando banco de dados
 
 //***Configurar pasta pública
 //Arquivos estáticos
@@ -27,7 +28,15 @@ server.get("/create-point", (req, res) => {
 })
 
 server.get("/search", (req, res) => {
-    return res.render("search-results.html")
+
+    //***Pegar os dados do banco de dados
+    db.all(`SELECT * FROM places`, function(err, rows) {
+        if (err) {
+            return console.log(err)
+        }
+
+        return res.render("search-results.html", { places: rows })
+    })
 })
 
 

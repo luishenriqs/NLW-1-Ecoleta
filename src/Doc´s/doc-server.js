@@ -101,35 +101,25 @@ NO SERVER.JS => (/src/server.js)
 
 
 
-OBS: 
+*******************[NUNJUCKS]***********************
+*************[ESTRUTURA DE REPETIÇÃO]***************
+ 
+        {% for variable in iterator %}   ----->Para cada elemento dentro do array
+
+                <instructions>           ----->Faça alguma coisa
+
+        {% endfor %}
+
+****************************************************
+
+
+
+*****************[OBSERVAÇÕES]*********************
+ 
     Configurações de preferências do JSON
     Ctrl+Shift+p => >Preferences: Open Settings(JSON)
 
     Dois clicks + Ctrl D => Permite digitação também no próx elemento
+    Ctrl + / => Atalho para comentar bloco (Sinal "/" ao lado do ">")
 
-*/
-
-
-/*******************[ATENÇÃO]***********************
-
-
-
-
-****************************************************
-
-
-
-*****************[BANCO DE DADOS]*******************
-********************[SQLite3]***********************
-
-NO BASH
-    npm install sqlite3
-    ---> "Instala o SQLite na aplicação"
-
-
-****************************************************
-
-
-
-
-*/
+****************************************************/
