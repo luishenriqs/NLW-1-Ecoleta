@@ -79,13 +79,13 @@ db.serialize(() => {
     })
 
     //4 - Deletar os dados da tabela
-    db.run(`DELETE FROM places WHERE id = ?`, [11], function(err) {
+    db.run(`DELETE FROM places WHERE id = ?`, [19], function(err) {
         if (err) {
             return console.log(err)
         }
         console.log("Registros deletados com sucesso")
     })
-*/
 
+*/
 
 })
