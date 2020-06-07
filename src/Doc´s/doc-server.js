@@ -102,13 +102,29 @@ NO SERVER.JS => (/src/server.js)
 
 
 *******************[NUNJUCKS]***********************
-*************[ESTRUTURA DE REPETIÇÃO]***************
- 
+*******************[FOR E IF]***********************
+
+    No html => n-for + enter ->(Nunjucks Template)
+
         {% for variable in iterator %}   ----->Para cada elemento dentro do array
 
-                <instructions>           ----->Faça alguma coisa
+            <instructions>               ----->Faça alguma coisa
 
         {% endfor %}
+
+
+    No html => n-if + enter ->(Nunjucks Template)
+
+        {% if condition %}               ----->Se condicional for verdadeira
+
+            <instructions>               ----->Faça alguma coisa
+
+        {% else %}
+
+            <instructions>               ----->Faça alguma coisa
+        
+        {% endif %}
+
 
 ****************************************************
 
