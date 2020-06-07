@@ -61,15 +61,15 @@ server.post("/savepoint", (req, res) => {
 
     function afterInsertData(err) {
         if (err) {
-            return console.log(err)
+            console.log(err)
+            return res.send("Erro no cadastro")
         }
         console.log("Cadastrado com sucesso")
         console.log(this)
 
-        //Video 1:34:00
-        //return res.send("ok")
 
-        return res.render("index.html", { saved: true })
+
+        return res.render("create-point.html", { saved: true })
     }
 
     db.run(query, values, afterInsertData)
